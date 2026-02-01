@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* HEADER */
+
+.pedidos-header {
+  max-width: 1000px;
+  margin: 2rem auto 1.5rem;
+  padding: 0 1rem;
+  color: var(--text);
+}
+
+.pedidos-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  color: var(--text-title);
+  margin-bottom: 0.3rem;
+}
+
+.pedidos-header p {
+  color: var(--text-soft);
+  font-size: 1rem;
+}
+
+
+/* CONTENEDOR LISTA */
+
+.container-pedidos {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

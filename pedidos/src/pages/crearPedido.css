@@ -1,0 +1,127 @@
+.form-container {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  background: var(--bg-soft);
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  color: var(--text);
+}
+
+
+/* TÍTULO */
+
+.form-container h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-title);
+}
+
+.form-container p {
+  color: var(--text-soft);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+
+/* FORM */
+
+.pedido-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  font-weight: 500;
+}
+
+
+/* INPUT */
+
+.form-group input {
+  background: var(--bg-card);
+  border: 1px solid transparent;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: var(--text-soft);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(56,189,248,0.25);
+}
+
+
+/* BOTÓN */
+
+.btn-submit {
+  background: linear-gradient(135deg, var(--success), #16a34a);
+  border: none;
+  color: var(--bg-soft);
+  padding: 0.8rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.25s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(34,197,94,0.45);
+}
+
+
+/* TOAST */
+
+.toast-success {
+  background: var(--success);
+  color: white !important;
+  padding: 0.8rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  animation: toastIn 0.4s ease, toastOut 0.4s ease 2.6s forwards;
+}
+
+
+/* ANIMACIONES */
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toastOut {
+  to {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+}
