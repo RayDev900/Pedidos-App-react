@@ -8,9 +8,6 @@
   color: var(--text);
 }
 
-
-/* TÍTULO */
-
 .form-container h1 {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
@@ -23,9 +20,6 @@
   margin-bottom: 2rem;
   font-size: 0.95rem;
 }
-
-
-/* FORM */
 
 .pedido-form {
   display: flex;
@@ -44,9 +38,6 @@
   color: var(--text-soft);
   font-weight: 500;
 }
-
-
-/* INPUT */
 
 .form-group input {
   background: var(--bg-card);
@@ -68,9 +59,6 @@
   box-shadow: 0 0 0 2px rgba(56,189,248,0.25);
 }
 
-
-/* BOTÓN */
-
 .btn-submit {
   background: linear-gradient(135deg, var(--success), #16a34a);
   border: none;
@@ -89,9 +77,6 @@
   box-shadow: 0 10px 25px rgba(34,197,94,0.45);
 }
 
-
-/* TOAST */
-
 .toast-success {
   background: var(--success);
   color: white !important;
@@ -101,12 +86,8 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 1.5rem;
-
   animation: toastIn 0.4s ease, toastOut 0.4s ease 2.6s forwards;
 }
-
-
-/* ANIMACIONES */
 
 @keyframes toastIn {
   from {
